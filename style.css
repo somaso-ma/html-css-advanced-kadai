@@ -59,3 +59,76 @@ PC用のスタイル
     color: #0d0d0d;
   }
 }
+
+@media screen  and (max-width: 767px) {
+  /* スマートフォン用のスタイルを指定する */
+  body {
+    min-width: 375px;
+    margin: 0;
+  }
+  /* PCのナビゲーションを非表示に */
+  #nav-pc {
+    display: none;
+  }
+  /* ハンバーガーメニュー */
+  #menu-sp {
+    float: right;
+    padding: 0;
+  }
+  /* スマホ用ナビゲーション */
+  #nav-sp {
+    background-color: #ce933e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: none;
+    z-index: 100;
+  }
+  /* ナビゲーションメニュー用ロゴ */
+  #logo-sp {
+    margin: 80px 0 30px 20px;
+  }
+  #nav-sp a {
+    display: block;
+  }
+  #nav-sp a:link {
+    color: #fff;
+  }
+  #nav-sp ul {
+    padding-left: 0;
+  }
+  #nav-sp li {
+    list-style: none;
+  }
+  /* xボタン */
+  #close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  #nav-sp a:visited {
+    color: #fff;
+  }
+  #nav-sp a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  #nav-sp a:active {
+    color: #fff;
+  }
+  #nav-sp .menu {
+    text-decoration: none;
+    display: block;
+    margin: 0 20px;
+    height: 44px;
+    font-size: 16px;
+    background-image: url(images/arrow.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  #menu-sp, #nav-sp {
+    display: none;
+  }
+}
