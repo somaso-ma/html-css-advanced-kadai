@@ -58,9 +58,15 @@ PC用のスタイル
   #nav-pc>a:active {
     color: #0d0d0d;
   }
+  #menu-sp {
+    display: none;
+  }
+  #nav-sp {
+    display: none;
+  }
 }
 
-@media screen  and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   /* スマートフォン用のスタイルを指定する */
   body {
     min-width: 375px;
@@ -72,13 +78,16 @@ PC用のスタイル
   }
   /* ハンバーガーメニュー */
   #menu-sp {
+    background-color: transparent;
+    display: block;
+    border: none;
     float: right;
     padding: 0;
   }
   /* スマホ用ナビゲーション */
   #nav-sp {
     background-color: #ce933e;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     height: 100%;
@@ -107,6 +116,8 @@ PC用のスタイル
     position: absolute;
     top: 20px;
     right: 20px;
+    background-color: transparent;
+    border: none;
   }
   #nav-sp a:visited {
     color: #fff;
@@ -127,8 +138,5 @@ PC用のスタイル
     background-image: url(images/arrow.png);
     background-repeat: no-repeat;
     background-position: right top;
-  }
-  #menu-sp, #nav-sp {
-    display: none;
   }
 }
